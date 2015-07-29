@@ -5,6 +5,7 @@ from collections import namedtuple
 
 City = namedtuple('City', 'name state population')
 
+
 def get_cities():
     cities = [
         City('Hobart', 'TAS', 219200),

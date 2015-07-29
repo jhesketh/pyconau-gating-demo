@@ -7,4 +7,3 @@ class TestCities(testtools.TestCase):
     def test_largest(self):
         largest = 'Sydney'
         self.assertEqual(largest, cities.largest(cities.get_cities()).name)
-
