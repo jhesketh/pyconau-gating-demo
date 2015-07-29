@@ -11,4 +11,5 @@ class TestCities(testtools.TestCase):
 
     def test_largest_state(self):
         largest = 'NSW'
-        self.assertEqual(largest, cities.largest_state(cities.get_population_data()))
+        self.assertEqual(
+            largest, cities.largest_state(cities.get_population_data()))

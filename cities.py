@@ -20,13 +20,13 @@ def largest_city(population_data):
 
 
 def largest_state(population_data):
-     state_population = {}
-     for city in population_data:
-          if city.state not in state_population:
-              state_population[city.state] = city.population
-          else:
-              state_population[city.state] += city.population
-     return sorted(state_population, key=state_population.get, reverse=True)[0] 
+    state_population = {}
+    for city in population_data:
+        if city.state not in state_population:
+            state_population[city.state] = city.population
+        else:
+            state_population[city.state] += city.population
+    return sorted(state_population, key=state_population.get, reverse=True)[0]
 
 
 if __name__ == '__main__':
