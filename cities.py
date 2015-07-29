@@ -6,7 +6,7 @@ from collections import namedtuple
 City = namedtuple('City', 'name state population')
 
 
-def get_cities():
+def get_population_data():
     cities = [
         City('Hobart', 'TAS', 219200),
         City('Brisbane', 'QLD', 2274460),
@@ -15,9 +15,9 @@ def get_cities():
     return cities
 
 
-def largest(cities):
-    return sorted(cities, key=lambda x: x.population, reverse=True)[0]
+def largest_city(population_data):
+    return sorted(population_data, key=lambda x: x.population, reverse=True)[0]
 
 
 if __name__ == '__main__':
-    print(largest(get_cities()))
+    print(largest_city(get_population_data()))
